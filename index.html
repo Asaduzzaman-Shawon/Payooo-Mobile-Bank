@@ -9,35 +9,31 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    
-
 <section class="flex mx-auto mt-6">
         <div class="mockup-phone">
             <div class="camera"></div>
             <div class="display">
               <div class="artboard artboard-demo phone-1">
                 <div class="mx-auto container h-auto ">
-
-
+                <!-- Log In section Start -->
                     <div class="hero">
                         <div class="">
                           <div class="card bg-base-100  shadow-2xl">
                             <form class="card-body">
                               <div class="form-control">
                                 <label class="label">
-                                  <span class="label-text">Mobile Number</span>
+                                  <span class="label-text font-bold">Mobile Number</span>
                                 </label>
-                                <input type="email" placeholder="Enter your number" class="rounded-2xl input input-bordered" required />
+                                <input type="text" placeholder="Enter your number" class="bg-slate-100 border-none rounded-2xl input input-bordered" required />
                               </div>
                               <div class="form-control">
                                 <label class="label">
-                                  <span class="label-text">4 Digit Pin</span>
+                                  <span class="label-text font-bold">4 Digit Pin</span>
                                 </label>
-                                <input type="password" placeholder="Enter 4 Digit Pin" class="rounded-2xl input input-bordered" required />
-                               
+                                <input id="pin" type="password" placeholder="Enter 4 Digit Pin" class="bg-slate-100 border-none rounded-2xl input input-bordered" required />
                               </div>
                               <div class="form-control mt-6">
-                                <button class="btn btn-primary rounded-3xl">Login</button>
+                                <button onclick="check()" id="login" type="submit" class="btn btn-primary rounded-3xl">Login</button>
                               </div>
                             </form>
                           </div>
@@ -48,6 +44,7 @@
             </div>
           </div>
 </section>
+
 
 
 
