@@ -8,6 +8,15 @@ function check(){
     }
 }
 
+function cashIn(){
+    document.getElementById('cash-in-sec').classList.remove('hidden')
+    document.getElementById('cash-out-sec').classList.add('hidden')
+}
+
+function cashOut(){
+    document.getElementById('cash-out-sec').classList.remove('hidden')
+    document.getElementById('cash-in-sec').classList.add('hidden')
+}
 
 
 
